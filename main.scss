@@ -8,8 +8,8 @@ $second_background-color:#e4e3e3;
 $logo_title-font: 'Shrikhand', serif;
 $text-font: 'Roboto', serif;
 
-$first-font-size: 30px;
-$second-font-size: 20px;
+$first-font-size: 21px;
+$second-font-size: 18px;
 $font-weight: bold;
 
 body,h1,h2,h3,p,ul,li{
@@ -58,7 +58,7 @@ a{
         }
         img{
             height: 55px;
-            width: 180px;
+            width: 170px;
         }
     }
 }
@@ -66,6 +66,7 @@ a{
     display: flex;
     align-items: center;
     margin: auto;
+    margin-left: 95px;
     width: 220px;
     @include desktop{
         background: linear-gradient($primary-color, $tertiary-color, $secondary-color);
@@ -121,7 +122,7 @@ main{
         h2{
             font-family: $text-font;
             font-size: $second-font-size;
-            font-weight: normal;
+            font-weight: $font-weight;
         }
     }
     &__btn{
@@ -228,6 +229,162 @@ main{
             font-family: $logo_title-font;
             @include desktop{
                 margin-left: 30px;
+            }
+        }
+    }
+}
+
+
+@mixin tablette {
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        @content;
+    } 
+}
+
+.store{
+    background-color: $background-color;
+    padding: 15px;
+    padding-top: 50px; 
+    margin-top: 100px;
+    @include tablette{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px;
+        height: 100%;
+    }
+    @include desktop{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+        align-items: center;
+        padding: 0px;
+        height: 100%;
+        background-color: white;
+    }
+    &__title{
+        font-family: $logo_title-font;
+        font-size: 20px;
+        margin-bottom: 20px;
+        @include tablette{
+            padding: 20px 0 20px 20px;
+            width: 100%;
+        }
+        @include desktop{
+            position: absolute;
+            top: 550px;
+            margin-left: 15px;
+        }
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        
+        background: white;
+        border-radius: 20px;
+        box-shadow: 1px 5px 1px 1px #eeeeee;
+        margin-bottom: 25px;
+        &--img{
+            width: 100%;
+            object-fit: cover;
+            max-height: 200px;
+            border-top-right-radius: 1em;
+            border-top-left-radius: 1em;
+            @include desktop{
+                max-width: 275px;
+                height: 200px;
+            }
+            @include tablette{
+                max-width: 325px;
+                height: 200px;
+            }
+        }
+        @include tablette{
+            margin: 10px;
+        }
+        @include desktop{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        &--new{
+            background: $tertiary-color;
+            color: #18705c;
+            position: absolute;
+            top: 10px;
+            right: -88px;
+            margin: 5px 100px 0 150px;
+            padding: 5px 15px;
+            font-weight: $font-weight;
+            z-index: 1000;
+        }
+    }
+}
+.new{
+    position: relative;
+    max-height: 200px;
+}
+.card__text_and_icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 15px;
+    h1{
+        font-family: $logo_title-font;
+        font-size: 18px;
+        margin-left: 15px;
+        margin-bottom: 3px;
+    }
+    p{
+        font-family: $text-font;
+        font-weight: $font-weight;
+        font-size: 15px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    &__heart{
+        position: relative;
+        margin-right: 20px;
+        margin-top: 4px;
+        i{
+            font-size: 25px;
+            left: 50%;
+            &:active{
+                background-color: $primary-color;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.footer{
+    background: rgb(53, 53, 53);
+    color: white;
+    padding: 20px;
+    &__title{
+        &--ohmy{
+            font-family: $logo_title-font;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+    }
+    &__text{
+        font-family: $text-font;
+        font-weight: $font-weight;
+        &--icon_one{
+            margin-right: 15px;
+        }
+        &--icon_two{
+            margin-right: 8px;
+        }
+        li{
+            margin-bottom: 8px;
+            a{
+                color: white;
             }
         }
     }

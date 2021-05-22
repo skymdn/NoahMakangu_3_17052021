@@ -11,16 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <header class="header_menu">
+        <div class="header_menu__logo">
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+            <a href="index.html"><img src="Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood"></a>
+        </div>
+        <div class="header_menu__image">
+            <img src="Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo de restaurant Le délice des sens" />
+        </div>
+    </header>
     <main>
-        <header class="header_menu">
-            <div class="header_menu__logo">
-                <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-                <a href="index.html"><img src="Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood"></a>
-            </div>
-            <div class="header_menu__image">
-                <img src="Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo de restaurant Le délice des sens" />
-            </div>
-        </header>
         <section class="menu">
             <div class="menu__top">
                 <h1>Le délice des sens</h1>
@@ -122,19 +122,21 @@
                 <a href="#">Commander</a>
             </div>
         </section>
-        <footer><!--footer du site-->
-            <div class="footer__logo"><!--partie du logo footer-->
-                 <img src="Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="Logo de Ohmyfood">
-            </div> 
-            <div class="footer__text"><!--partie du text du footer-->
+    </main>
+    <footer><!--footer du site-->
+        <div class="footer">
+            <div class="footer__title">
+                <p class="footer__title--ohmy">ohmyfood</p>
+            </div>
+            <div class="footer__text">
                 <ul>
-                    <li><i class="fas fa-utensils"></i>Proposer un restaurent</li>
-                    <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                    <li><span class="footer__text--icon_one"><i class="fas fa-utensils"></span></i>Proposer un restaurent</li>
+                    <li><span class="footer__text--icon_two"><i class="fas fa-hands-helping"></span></i>Devenir partenaire</li>
                     <li>Mentions légales</li>
                     <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
                 </ul>
             </div>
-         </footer>
-    </main>
+        </div>
+    </footer>
 </body>
 </html>

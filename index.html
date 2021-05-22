@@ -28,7 +28,7 @@
     <main>
         <section class="reservation"><!-- section de la reservation-->
             <div class="reservation__text"><!--regroupement des deux titre-->
-                <h1> Réservez le menu qui vous convient </h1> 
+                <h1> Réservez le menu qui<br /> vous convient </h1> 
                 <h2> Découvrez des restaurant d'exception, séléctionnés par nos soins</h2>
             </div>
             <a href="#"> <!-- lien avec à l'intérieur le bouton -->
@@ -77,43 +77,47 @@
                 <h1 class="store__title">Restaurants</h1>
                 <a href="La_palette_du_gout.html">
                     <div class="store__card">
-                        <img src="Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo restaurant  La palette du gout" />
+                        <div class="new">
+                            <img src="Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo restaurant  La palette du gout" class="store__card--img" />
+                            <div class="store__card--new"> Nouveau </div>
+                        </div>
                         <div class="card__text_and_icon">
                             <div class="card__text">
                                 <h1>La palette du gout</h1>
                                 <p>Ménilmontant</p>
                             </div>
-                            <div class="card__heart">
+                            <div class="card__text_and_icon__heart">
                                 <i class="far fa-heart"></i>
                             </div>
                         </div>
-                        <div class="card__new"> Nouveau </div>
                     </div>
                 </a>
                 <a href="La_note_enchantée.html">
                     <div class="store__card">
-                        <img src="Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo restaurant  La note enchantée" />
+                        <div class="new">
+                            <img src="Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo restaurant  La note enchantée" class="store__card--img" />
+                            <div class="store__card--new"> Nouveau </div>
+                        </div>
                         <div class="card__text_and_icon">
                             <div class="card__text">
                                 <h1>La note enchantée</h1>
                                 <p>Charonne</p>
                             </div>
-                            <div class="card__heart">
+                            <div class="card__text_and_icon__heart">
                                 <i class="far fa-heart"></i>
                             </div>
                         </div>
-                        <div class="card__new"> Nouveau </div>
                     </div>
                 </a>
                 <a href="A_la_française.html">
                     <div class="store__card">
-                        <img src="Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo restaurant  A la française" />
+                        <img src="Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo restaurant  A la française" class="store__card--img" />
                         <div class="card__text_and_icon">
                             <div class="card__text">
                                 <h1>A la française</h1>
                                 <p>Cité rouge</p>
                             </div>
-                            <div class="card__heart">
+                            <div class="card__text_and_icon__heart">
                                 <i class="far fa-heart"></i>
                             </div>
                         </div>
@@ -121,13 +125,13 @@
                 </a>
                 <a href="Le_delice_des_sens.html">
                     <div class="store__card">
-                        <img src="Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo restaurant  Le délice des sens" />
+                        <img src="Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo restaurant  Le délice des sens" class="store__card--img" />
                         <div class="card__text_and_icon">
                             <div class="card__text">
                                 <h1>Le délice des sens</h1>
                                 <p>Folie-Méricourt</p>
                             </div>
-                            <div class="card__heart">
+                            <div class="card__text_and_icon__heart">
                                 <i class="far fa-heart"></i>
                             </div>
                         </div>
@@ -137,16 +141,18 @@
         </section>
     </main>
     <footer><!--footer du site-->
-        <div class="footer__logo"><!--partie du logo footer-->
-            <img src="Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="Logo de Ohmyfood">
-        </div> 
-        <div class="footer__text"><!--partie du text du footer-->
-            <ul>
-                <li><i class="fas fa-utensils"></i>Proposer un restaurent</li>
-                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-                <li>Mentions légales</li>
-                <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
-            </ul>
+        <div class="footer">
+            <div class="footer__title">
+                <p class="footer__title--ohmy">ohmyfood</p>
+            </div>
+            <div class="footer__text">
+                <ul>
+                    <li><span class="footer__text--icon_one"><i class="fas fa-utensils"></span></i>Proposer un restaurent</li>
+                    <li><span class="footer__text--icon_two"><i class="fas fa-hands-helping"></span></i>Devenir partenaire</li>
+                    <li>Mentions légales</li>
+                    <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     
