@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, h1, h2, h3, p, ul, li {
   margin: 0;
   padding: 0;
@@ -537,7 +538,7 @@ body.pages {
   font-weight: bold;
 }
 
-.menu__btn {
+² .menu__btn {
   display: inline-block;
   background: linear-gradient(#FF79DA, #9356DC);
   cursor: pointer;
@@ -552,22 +553,22 @@ body.pages {
   padding: 15px 50px;
   margin: 25px 100px 100px 100px;
 }
-.menu__btn:hover {
+² .menu__btn:hover {
   background: linear-gradient(#FF79DA, rgba(147, 86, 220, 0.8));
   box-shadow: 0 5px 15px 0 #838383;
   transition: 0.5s;
 }
-.menu__btn a {
+² .menu__btn a {
   color: white;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .menu__btn {
+  ² .menu__btn {
     display: block;
     width: 20%;
   }
 }
 @media screen and (min-width: 1025px) {
-  .menu__btn {
+  ² .menu__btn {
     display: block;
     width: 30%;
   }
