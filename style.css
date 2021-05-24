@@ -59,7 +59,6 @@ a {
 }
 @media screen and (min-width: 1025px) {
   .search {
-    background: linear-gradient(#9356DC, #99E2D0, #FF79DA);
     padding: 3px;
     width: 50%;
     border-radius: 25px;
@@ -81,8 +80,12 @@ a {
   width: 100%;
 }
 @media screen and (min-width: 1025px) {
+  .search__input_box input {
+    border: solid #9356DC;
+    border-radius: 25px;
+  }
   .search__input_box input::placeholder {
-    color: white;
+    font-weight: bold;
   }
 }
 
@@ -177,7 +180,7 @@ main {
   .functioning__btn {
     display: flex;
     margin-left: 20px;
-    padding: 20px 8px;
+    padding: 15px 25px;
   }
 }
 .functioning__btn--circle {
@@ -196,7 +199,7 @@ main {
   .functioning__btn--circle {
     display: block;
     position: relative;
-    left: -22px;
+    left: -30px;
     top: 2px;
   }
 }
@@ -392,6 +395,182 @@ main {
 }
 .footer__text li a {
   color: white;
+}
+
+body.pages {
+  background: white;
+  /*font-family: $text-font;*/
+  text-align: left;
+  margin: 0px;
+}
+
+.header_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_menu__logo {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  align-items: center;
+  background: white;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid #f4f4f4;
+  padding: 5px 45px;
+}
+.header_menu__logo--link_icon {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+@media screen and (min-width: 1025px) {
+  .header_menu__logo {
+    display: block;
+    align-items: left;
+  }
+}
+.header_menu__image {
+  height: 270px;
+  width: 100%;
+  z-index: -1;
+}
+.header_menu__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main_pages {
+  background: #ebeaea;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  z-index: 1000;
+  margin-top: -48px;
+}
+
+.menu__top {
+  position: relative;
+  width: 100%;
+}
+.menu__top h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 20px;
+  padding: 20px 0 20px 20px;
+}
+.menu__top i {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
+.menu__plate {
+  padding: 20px;
+}
+
+@media screen and (min-width: 1025px) {
+  .menu__plate_category {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.menu__plate_category__title {
+  margin: 25px 0px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Roboto", serif;
+}
+@media screen and (min-width: 1025px) {
+  .menu__plate_category__title {
+    width: 100%;
+    padding: 15px 0 15px 15px;
+  }
+}
+.menu__plate_category__title:after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #99E2D0;
+  width: 50px;
+  padding-top: 2px;
+}
+
+.menu__text_box {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 20px;
+  margin: 25px 0 10px 0px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0 #c3c3c357;
+}
+.menu__text_box:hover {
+  box-shadow: 0 5px 15px 0 #797878;
+}
+
+.menu__text {
+  width: 80%;
+  padding: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__text h3 {
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+}
+.menu__text p {
+  font-family: "Roboto", serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.menu__price {
+  font-size: 15px;
+  margin: auto;
+  text-align: right;
+  font-weight: bold;
+}
+
+.menu__btn {
+  display: inline-block;
+  background: linear-gradient(#FF79DA, #9356DC);
+  cursor: pointer;
+  border: 0;
+  text-align: center;
+  align-items: center;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 5px 15px 0 #c3c3c357;
+  padding: 15px 50px;
+  margin: 25px 100px 100px 100px;
+}
+.menu__btn:hover {
+  background: linear-gradient(#FF79DA, rgba(147, 86, 220, 0.8));
+  box-shadow: 0 5px 15px 0 #838383;
+  transition: 0.5s;
+}
+.menu__btn a {
+  color: white;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu__btn {
+    display: block;
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu__btn {
+    display: block;
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
